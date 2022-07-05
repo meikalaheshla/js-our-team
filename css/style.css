@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-.card-container {
+#card-container {
     width: 1200px;
     background-color: bisque;
     margin: 50px auto;
@@ -30,6 +30,7 @@
     text-align: center;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }

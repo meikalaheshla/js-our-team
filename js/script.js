@@ -31,26 +31,55 @@ Barbara Ramos | Graphic Designer | barbara - ramos - graphic - designer.jpg */
 // ARRAY DEI MEMBRI DEL TEAM
 
 const teamMembers = [
-    { fullName: 'Wayne Barnett', role: 'Founder & CEO', pic: 'wayne-barnett-founder-ceo.jpg' },
-    { fullName: 'Angela Caroll', role: 'Chief Editor', pic: 'angela-caroll-chief-editor.jpg' },
-    { fullName: 'Walter Gordon', role: 'Office Manager', pic: 'walter-gordon-office-menager.jpg' },
-    { fullName: 'Angela Lopez', role: 'Social Media Manager', pic: 'angela-lopez-social-media-menager.jpg' },
-    { fullName: 'Scott Estrada', role: 'Developer', pic: 'scott-estrada-developer.jpg' },
-    { fullName: 'Barbara Ramos', role: 'Graphic Designer', pic: 'barbara-ramos-graphic-designer.jpg' }
+    {
+        fullName: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        pic: 'wayne-barnett-founder-ceo.jpg'
+    },
+    {
+        fullName: 'Angela Caroll',
+        role: 'Chief Editor',
+        pic: 'angela-caroll-chief-editor.jpg'
+    },
+    {
+        fullName: 'Walter Gordon',
+        role: 'Office Manager',
+        pic: 'walter-gordon-office-menager.jpg'
+    },
+    {
+        fullName: 'Angela Lopez',
+        role: 'Social Media Manager',
+        pic: 'angela-lopez-social-media-menager.jpg'
+    },
+    {
+        fullName: 'Scott Estrada', role: 'Developer',
+        pic: 'scott-estrada-developer.jpg'
+    },
+    {
+        fullName: 'Barbara Ramos',
+        role: 'Graphic Designer',
+        pic: 'barbara-ramos-graphic-designer.jpg'
+    }
 ]
 
 console.log(teamMembers)
 
 console.table(teamMembers)
 
+// PRENDO L'ELEMENTO HTML DOVE VADO A CREARE LE MIE CARD
 
+
+const cardContainer = document.getElementById('card-container')
 
 for (let i = 0; i < teamMembers.length; i++) {
+    let myCard = '';
 
     const teamMember = teamMembers[i]
-    console.log('----------')
+    const teamMemberName = teamMember.fullName;
+    const teamMemberRole = teamMember.role;
+    const teamMemberPic = teamMember.pic;
+    myCard = `<div class="col"> <div class="card"> NAME-${teamMemberName}</br> ROLE -${teamMemberRole}</br> - PICSTRING- ${teamMemberPic} </div></div>`
+    const cardDeck = cardContainer.innerHTML += myCard
 
-    for (let key in teamMembers[i]) {
-        console.table(`${key} - ${teamMember[key]}`)
-    }
 }
+
