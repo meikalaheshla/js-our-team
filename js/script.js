@@ -38,3 +38,5 @@ const teamMembers = [
 ]
 
 console.log(teamMembers)
+
+console.table(teamMembers)
