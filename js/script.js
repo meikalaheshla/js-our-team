@@ -44,12 +44,12 @@ const teamMembers = [
     {
         fullName: 'Walter Gordon',
         role: 'Office Manager',
-        pic: 'walter-gordon-office-menager.jpg'
+        pic: 'walter-gordon-office-manager.jpg'
     },
     {
         fullName: 'Angela Lopez',
         role: 'Social Media Manager',
-        pic: 'angela-lopez-social-media-menager.jpg'
+        pic: 'angela-lopez-social-media-manager.jpg'
     },
     {
         fullName: 'Scott Estrada', role: 'Developer',
@@ -78,7 +78,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     const teamMemberName = teamMember.fullName;
     const teamMemberRole = teamMember.role;
     const teamMemberPic = teamMember.pic;
-    myCard = `<div class="col"> <div class="card"> NAME-${teamMemberName}</br> ROLE -${teamMemberRole}</br> - PICSTRING- ${teamMemberPic} </div></div>`
+    myCard = `<div class="col"> <div class="card"> <img src="img/${teamMemberPic}" alt="${teamMemberPic}" > <div>NAME - ${teamMemberName}</br> ROLE - ${teamMemberRole}</br></div></div></div>`
     const cardDeck = cardContainer.innerHTML += myCard
 
 }

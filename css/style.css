@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+main {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
 #card-container {
     width: 1200px;
     background-color: bisque;
@@ -30,7 +35,12 @@
     text-align: center;
     color: white;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
     align-items: center;
+}
+
+.card img {
+    margin-right: 20px;
+
+    height: 100%;
 }
