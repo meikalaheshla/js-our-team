@@ -1,3 +1,4 @@
+'use strict'
 /*Utilizzando i dati forniti, creare un array di oggetti per rappresentare i membri del team.
 Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 # MILESTONE 0:
@@ -22,3 +23,18 @@ Walter Gordon | Office Manager | walter - gordon - office - manager.jpg
 Angela Lopez | Social Media Manager | angela - lopez - social - media - manager.jpg
 Scott Estrada | Developer | scott - estrada - developer.jpg
 Barbara Ramos | Graphic Designer | barbara - ramos - graphic - designer.jpg */
+
+
+// MILESTONE0
+
+
+const teamMembers = [
+    { fullName: 'Wayne Barnett', role: 'Founder & CEO', pic: 'wayne-barnett-founder-ceo.jpg' },
+    { fullName: 'Angela Caroll', role: 'Chief Editor', pic: 'angela-caroll-chief-editor.jpg' },
+    { fullName: 'Walter Gordon', role: 'Office Manager', pic: 'walter-gordon-office-menager.jpg' },
+    { fullName: 'Angela Lopez', role: 'Social Media Manager', pic: 'angela-lopez-social-media-menager.jpg' },
+    { fullName: 'Scott Estrada', role: 'Developer', pic: 'scott-estrada-developer.jpg' },
+    { fullName: 'Barbara Ramos', role: 'Graphic Designer', pic: 'barbara-ramos-graphic-designer.jpg' }
+]
+
+console.log(teamMembers)
