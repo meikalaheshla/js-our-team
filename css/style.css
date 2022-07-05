@@ -3,3 +3,33 @@
     padding: 0;
     margin: 0;
 }
+
+.card-container {
+    width: 1200px;
+    background-color: bisque;
+    margin: 50px auto;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.col {
+    width: calc(100%/3);
+    height: 200px;
+    padding: 20px;
+
+}
+
+.card {
+    background-color: brown;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

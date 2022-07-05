@@ -28,6 +28,8 @@ Barbara Ramos | Graphic Designer | barbara - ramos - graphic - designer.jpg */
 // MILESTONE0
 
 
+// ARRAY DEI MEMBRI DEL TEAM
+
 const teamMembers = [
     { fullName: 'Wayne Barnett', role: 'Founder & CEO', pic: 'wayne-barnett-founder-ceo.jpg' },
     { fullName: 'Angela Caroll', role: 'Chief Editor', pic: 'angela-caroll-chief-editor.jpg' },
@@ -40,3 +42,15 @@ const teamMembers = [
 console.log(teamMembers)
 
 console.table(teamMembers)
+
+
+
+for (let i = 0; i < teamMembers.length; i++) {
+
+    const teamMember = teamMembers[i]
+    console.log('----------')
+
+    for (let key in teamMembers[i]) {
+        console.table(`${key} - ${teamMember[key]}`)
+    }
+}
